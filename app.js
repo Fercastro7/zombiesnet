@@ -13,8 +13,8 @@ var routes = require("./routes");
 var passportsetup = require("./passportsetup");
 var app = express();
 
-//mongoose.connect("mongodb://admin:admin123@ds129762.mlab.com:29762/zombies_nest");
-mongoose.connect("mongodb://localhost:27017/zombies_nest");
+mongoose.connect("mongodb://admin:admin123@ds129762.mlab.com:29762/zombies_nest");
+//mongoose.connect("mongodb://localhost:27017/zombies_nest");
 passportsetup();
 
 app.set("port",process.env.PORT||3000);
