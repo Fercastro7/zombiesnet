@@ -1,5 +1,5 @@
 <%include _header%>
-<h1>Galeria de Armas.</h1>
+<h1>Productos Disponibles</h1>
 
 <% armas.forEach((arma)=>{%>
     <div class="panel panel-default">
@@ -10,9 +10,9 @@
         <div class="panel-body">
            Categoria:, <%= arma.categoria%>
             <br>
-           Arma: ,<%= arma.fuerza%>
+          Precio: ,<%= arma.fuerza%>
             <br>
-           Municiones:, <%= arma.municiones%>
+           Stock:, <%= arma.municiones%>
             <br>
         </div>
         <%}%>
